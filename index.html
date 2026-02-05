@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link href="./src/css/output.css" rel="stylesheet" />
+</head>
+<body class="flex items-center h-dvh bg-[#f2eae4] font-[Montserrat]">
+  
+  <div class="max-w-137 container min-h-150 mx-auto bg-[#f2eae4] flex items-center pt-30 pb-20 md:flex-row flex-col">
+    <div class="w-87.5 m-w-[25.625rem] md:block hidden rounded-t-[1.25rem] md:rounded-e-none rounded-b-none md:rounded-br-none md:rounded-bl-[1.25rem] overflow-hidden">
+      <img src="./images/image-product-desktop.jpg" alt="image-product">
+    </div>
+    <div class="w-87.5 m-w-[25.625rem] md:hidden block rounded-t-[1.25rem] md:rounded-e-none rounded-b-none md:rounded-br-none md:rounded-bl-[1.25rem] overflow-hidden">
+      <img src="./images/image-product-mobile.jpg" alt="mobile-image">
+    </div>
+    <div class="md:self-start self-center  p-2.5 md:p-5 bg-[#ffff] w-87.5 md:rounded-tr-[20px]  rounded-b-[20px] md:rounded-bl-none md:rounded-br-[1.25rem] space-y-3">
+      <p class="text-[#6b6b6b] tracking-[4px]">Perfume</p>
+      <h1 class="text-[#141414] text-[2rem] font-bold text-base/9">Gabrielle Essence Eau De Parfum</h1>
+      <p class="text-[#6b6b6b]">
+        A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+        Perfumer-Creator for the House of CHANEL.
+      </p>
+      <div class="flex items-center gap-4">
+        <span class="text-[2rem] text-[#437043] font-extrabold font-[fraunces]">$149.99</span>
+        <span class="text-[#6b6b6b] text-[.875rem] font-bold line-through">$169.99</span>
+      </div>
+      <button class="bg-[#437143] flex py-2.5 px-7.5 rounded-xl gap-1.5 items-center cursor-pointer hover:bg-[#274d27] transition-colors ease-in-out w-full justify-center">
+        <img src="./images/icon-cart.svg" alt="icon-cart">
+        <span class="text-white  text-sm font-bold">Add to Cart</span>
+      </button>
+    </div>
+  </div>
+</body>
+</html>
